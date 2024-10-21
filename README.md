@@ -24,10 +24,10 @@ next open this URL in your browser: `https://localhost:3000/v9_effectcomposer_er
 
 you should see the following message in the browser console:
 
-<details>
-<summary>open to see full error</summary>
-
 > TypeError: Cannot read properties of undefined (reading 'length')
+
+<details>
+<summary>open to see the full error stack</summary>
 
 ```shell
 at eval (webpack-internal:///(app-pages-browser)/./node_modules/@react-three/postprocessing/dist/EffectComposer.js:92:41)
@@ -95,10 +95,10 @@ next open this URL in your browser: `https://localhost:3000/v9_leva_error`
 
 you should see the following message in the browser console:
 
-<details>
-<summary>open to see full error</summary>
-
 > TypeError: react_dom__WEBPACK_IMPORTED_MODULE_0__.render is not a function
+
+<details>
+<summary>open to see the full error stack</summary>
 
 ```shell
 at render (webpack-internal:///(app-pages-browser)/./node_modules/leva/dist/vector-plugin-6f82aee9.esm.js:556:42)
