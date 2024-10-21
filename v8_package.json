@@ -11,25 +11,21 @@
     },
     "dependencies": {
         "@react-three/drei": "9.114.5",
-        "@react-three/fiber": "9.0.0-beta.1",
+        "@react-three/fiber": "8.17.10",
         "@react-three/postprocessing": "2.16.3",
         "leva": "0.9.35",
-        "next": "15.0.0-canary.199",
-        "react": "19.0.0-rc-bf7e210c-20241017",
-        "react-dom": "19.0.0-rc-bf7e210c-20241017",
+        "next": "14.2.15",
+        "react": "18.3.1",
+        "react-dom": "18.3.1",
         "three": "0.169.0"
     },
     "devDependencies": {
-        "@types/node": "22.7.6",
+        "@types/node": "22.7.7",
         "@types/react": "18.3.11",
-        "@types/react-dom": "18",
+        "@types/react-dom": "18.3.1",
         "@types/three": "0.169.0",
-        "eslint": "9.12.0",
-        "eslint-config-next": "15.0.0-canary.199",
+        "eslint": "8.57.1",
+        "eslint-config-next": "14.2.15",
         "typescript": "5.6.3"
-    },
-    "overrides": {
-        "react": "19.0.0-rc-bf7e210c-20241017",
-        "react-dom": "19.0.0-rc-bf7e210c-20241017"
     }
 }
