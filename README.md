@@ -16,7 +16,8 @@ Note to self: [related R3F v9 issue](https://github.com/pmndrs/react-three-fiber
 
 install the dependencies use: `npm i --force`
 
-Then you need to you need to fix R3F **types** manually, as there the `/node_modules/@react-three/fiber/dist/declarations` directory missing in the latest **9.0.0-beta.1** release, you can solve it by installing the latest v8.x in a separate directory, and then copy the declarations directory over to your v9 directory
+> [!WARN]
+> If you use r3f v9 **beta 1**, then you also need to fix the R3F **types** manually, as there the `/node_modules/@react-three/fiber/dist/declarations` directory missing in the latest **9.0.0-beta.1** release, you can solve it by installing the [9.0.0-beta.0](https://www.npmjs.com/package/@react-three/fiber/v/9.0.0-beta.0) in a separate directory, and then copy the declarations directory over to your v9 beta 1 directory
 
 then to start the next.js dev server use the following command: `npm run dev`
 
@@ -87,7 +88,7 @@ export default nextConfig;
 
 install the dependencies use: `npm i --force`
 
-Then you need to you need to fix R3F **types** manually, as there the `/node_modules/@react-three/fiber/dist/declarations` directory missing in the latest **9.0.0-beta.1** release, you can solve it by installing the latest v8.x in a separate directory, and then copy the declarations directory over to your v9 directory
+If you use r3f v9 **beta 1**, then you also need to fix the R3F **types** manually, as there the `/node_modules/@react-three/fiber/dist/declarations` directory missing in the latest **9.0.0-beta.1** release, you can solve it by installing the [9.0.0-beta.0](https://www.npmjs.com/package/@react-three/fiber/v/9.0.0-beta.0) in a separate directory, and then copy the declarations directory over to your v9 beta 1 directory
 
 then to start the next.js dev server use the following command: `npm run dev`
 
@@ -160,7 +161,7 @@ I then used this command to install the R3F package:
 
 `npm i @react-three/fiber@9.0.0-beta.1 --save-exact --force`
 
-Then you need to you need to fix R3F **types** manually, as there the `/node_modules/@react-three/fiber/dist/declarations` directory missing in the latest **9.0.0-beta.1** release, you can solve it by installing the latest v8.x in a separate directory, and then copy the declarations directory over to your v9 directory
+If you use r3f v9 **beta 1**, then you also need to fix the R3F **types** manually, as there the `/node_modules/@react-three/fiber/dist/declarations` directory missing in the latest **9.0.0-beta.1** release, you can solve it by installing the [9.0.0-beta.0](https://www.npmjs.com/package/@react-three/fiber/v/9.0.0-beta.0) in a separate directory, and then copy the declarations directory over to your v9 beta 1 directory
 
 then I added three.js:
 
