@@ -19,6 +19,27 @@ install the dependencies use: `npm i --force`
 > [!WARN]
 > If you use r3f v9 **beta 1**, then you also need to fix the R3F **types** manually, as there the `/node_modules/@react-three/fiber/dist/declarations` directory missing in the latest **9.0.0-beta.1** release, you can solve it by installing the [9.0.0-beta.0](https://www.npmjs.com/package/@react-three/fiber/v/9.0.0-beta.0) in a separate directory, and then copy the declarations directory over to your v9 beta 1 directory
 
+If you want to quickly get your hands on a copy of the built beta 0 you can use the following package.json:
+
+```json
+{
+  "name": "r3f_types_recovery",
+  "version": "0.0.1",
+  "author": "github.com/chrisweb",
+  "license": "MIT",
+  "description": "r3f beta 1 missing types declarations directory",
+  "dependencies": {
+	  "@react-three/fiber": "9.0.0-beta.0",
+	  "react": "rc",
+	  "react-dom": "rc"
+  },
+  "overrites": {
+	  "react": "rc",
+	  "react-dom": "rc"
+  }
+}
+```
+
 then to start the next.js dev server use the following command: `npm run dev`
 
 next open this URL in your browser: `https://localhost:3000/v9_effectcomposer_error`
