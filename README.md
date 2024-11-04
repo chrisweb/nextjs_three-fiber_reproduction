@@ -176,7 +176,7 @@ npm i @types/three@latest --save-exact --save-dev --force
 
 and finally I added react three postprocessing:
 
-`npm i @react-three/postprocessing@latest --save-exact --force`
+`npm i @react-three/postprocessing@latest postprocessing@latest --save-exact --force`
 
 and for the second error example we add leva:
 
