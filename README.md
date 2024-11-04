@@ -1,12 +1,17 @@
 # next.js react three fiber prototype
 
+Update Nov. 4 2024: 
+
+* fixed missing dependency in package.json
+* updated **@react-three/fiber** to version [9.0.0-rc.0](https://github.com/pmndrs/react-three-fiber/issues/2338#issuecomment-2453589271)
+
 version of the main packages involved:
 
-@react-three/fiber: 9.0.0-beta.1
+@react-three/fiber: 9.0.0-rc.0
 @react-three/postprocessing: 2.16.3
-next: 15.0.0-canary.199
-react: 19.0.0-rc-bf7e210c-20241017
-react-dom: 19.0.0-rc-bf7e210c-20241017
+next: 15.0.3-canary.5
+react: 19.0.0-rc-7c8e5e7a-20241101
+react-dom: 19.0.0-rc-7c8e5e7a-20241101
 
 for more check out the [package.json](./package.json)
 
@@ -14,35 +19,11 @@ Note to self: [related R3F v9 issue](https://github.com/pmndrs/react-three-fiber
 
 ## Effectcomposer error
 
-install the dependencies use: `npm i --force`
-
-> [!WARN]
-> If you use r3f v9 **beta 1**, then you also need to fix the R3F **types** manually, as there the `/node_modules/@react-three/fiber/dist/declarations` directory missing in the latest **9.0.0-beta.1** release, you can solve it by installing the [9.0.0-beta.0](https://www.npmjs.com/package/@react-three/fiber/v/9.0.0-beta.0) in a separate directory, and then copy the declarations directory over to your v9 beta 1 directory
-
-If you want to quickly get your hands on a copy of the built beta 0 you can use the following package.json:
-
-```json
-{
-  "name": "r3f_types_recovery",
-  "version": "0.0.1",
-  "author": "github.com/chrisweb",
-  "license": "MIT",
-  "description": "r3f beta 1 missing types declarations directory",
-  "dependencies": {
-	  "@react-three/fiber": "9.0.0-beta.0",
-	  "react": "rc",
-	  "react-dom": "rc"
-  },
-  "overrites": {
-	  "react": "rc",
-	  "react-dom": "rc"
-  }
-}
-```
+install the dependencies use: `npm i`
 
 then to start the next.js dev server use the following command: `npm run dev`
 
-next open this URL in your browser: `https://localhost:3000/v9_effectcomposer_error`
+next open this URL in your browser: `http://localhost:3000/v9_effectcomposer_error`
 
 you should see the following message in the browser console:
 
@@ -107,13 +88,13 @@ export default nextConfig;
 
 ## leva error
 
-install the dependencies use: `npm i --force`
+install the dependencies use: `npm i`
 
 If you use r3f v9 **beta 1**, then you also need to fix the R3F **types** manually, as there the `/node_modules/@react-three/fiber/dist/declarations` directory missing in the latest **9.0.0-beta.1** release, you can solve it by installing the [9.0.0-beta.0](https://www.npmjs.com/package/@react-three/fiber/v/9.0.0-beta.0) in a separate directory, and then copy the declarations directory over to your v9 beta 1 directory
 
 then to start the next.js dev server use the following command: `npm run dev`
 
-next open this URL in your browser: `https://localhost:3000/v9_leva_error`
+next open this URL in your browser: `http://localhost:3000/v9_leva_error`
 
 you should see the following message in the browser console:
 
