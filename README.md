@@ -1,9 +1,13 @@
 # next.js react three fiber prototype
 
-Update Nov. 4 2024: 
+## Update Nov. 4 2024: 
 
 * fixed missing dependency in package.json
 * updated **@react-three/fiber** to version [9.0.0-rc.0](https://github.com/pmndrs/react-three-fiber/issues/2338#issuecomment-2453589271)
+
+Note to self: [related R3F v9 issue](https://github.com/pmndrs/react-three-fiber/issues/2338) (the v9 roadmap)
+
+## Dependencies overview
 
 version of the main packages involved:
 
@@ -14,8 +18,6 @@ react: 19.0.0-rc-7c8e5e7a-20241101
 react-dom: 19.0.0-rc-7c8e5e7a-20241101
 
 for more check out the [package.json](./package.json)
-
-Note to self: [related R3F v9 issue](https://github.com/pmndrs/react-three-fiber/issues/2338) (the v9 roadmap)
 
 ## Effectcomposer error
 
