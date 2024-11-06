@@ -13,9 +13,9 @@ version of the main packages involved:
 
 @react-three/fiber: 9.0.0-rc.0
 @react-three/postprocessing: 2.16.3
-next: 15.0.3-canary.5
-react: 19.0.0-rc-7c8e5e7a-20241101
-react-dom: 19.0.0-rc-7c8e5e7a-20241101
+next: 15.0.3-canary.8
+react: 19.0.0-rc-66855b96-20241106
+react-dom: 19.0.0-rc-66855b96-20241106
 
 for more check out the [package.json](./package.json)
 
@@ -63,6 +63,8 @@ for (let i = 0; i < children2.length; i++) {
 which corresponds to line 139 https://github.com/pmndrs/react-postprocessing/blob/master/src/EffectComposer.tsx#L139 in the typescript source file
 
 But only react and react three fiber are the packages that got updated, postprocessing is still the stable version, so I assume the error is due to a change somewhere inside of @react-three/fiber
+
+The ticket for this problem: [react-postprocessing issue #301](https://github.com/pmndrs/react-postprocessing/issues/301)
 
 ### no problem in v8
 
@@ -128,7 +130,26 @@ The error is in the vector-plugin file (in the render function):
 ReactDOM.render(element, container);
 ```
 
-## steps to create prototype:
+The ticket for this problem: [leva issue #521](https://github.com/pmndrs/leva/issues/521)
+
+## Suspense problem
+
+install the dependencies use: `npm i`
+
+then to start the next.js dev server use the following command: `npm run dev`
+
+I added a page (`http://localhost:3000/suspense_or_no_suspense`) that leads to 4 examples:
+
+* a first R3F Canvas is in a Next.js page on its own and everything works
+* the second example is a copy of the first but I added a React Suspense component around the R3F canvas, now when I visit the page (Next.js client navigation) by clicking on the link then the example works fine, however if I reload the page than I get a message in the console saying "THREE.WebGLRenderer: Context Lost."
+* the third example uses the same canvas again but instead of having a Suspense outside I moved the Suspense inside of the canvas, the example has no errors
+* the fourth example again uses the same canvas, this time there is a Suspense inside and outside of the canvas and again this example works (even after reloading the page, which is where the second example failed)
+
+So the only example that does not work is the second with one Suspense outside of the canvas and only when reloading the page
+
+As of now I have not opened a ticket as I'm not sure what dependency causes the problem, I assume it is either nextjs 15 or three fiber 9 rc 0 or react 19
+
+## steps (that got used to create this project):
 
 command to use create next app:
 
