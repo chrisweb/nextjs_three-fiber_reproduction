@@ -5,7 +5,7 @@ import { Canvas } from '@react-three/fiber'
 //import type { CanvasProps } from '@react-three/fiber'
 import { Stage } from '@react-three/drei'
 import { HueSaturation, EffectComposer } from '@react-three/postprocessing'
-import { useControls, Leva } from 'leva'
+import { useControls } from 'leva'
 import Model from './Model'
 
 const WebGLCanvas = (/*props: CanvasProps*/) => {
@@ -28,7 +28,6 @@ const WebGLCanvas = (/*props: CanvasProps*/) => {
     return (
         <Canvas shadows dpr={[1, 2]} camera={{ fov: 50 }}>
             <Suspense fallback={null}>
-                <Leva />
                 <Stage preset="rembrandt" intensity={1} environment="city">
                     <Model />
                 </Stage>
