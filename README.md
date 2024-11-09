@@ -130,6 +130,10 @@ The error is in the vector-plugin file (in the render function):
 ReactDOM.render(element, container);
 ```
 
+EDIT: I added the [`<Leva />` component](https://github.com/pmndrs/leva/blob/main/docs/configuration.md) (based on [this suggestion](https://github.com/pmndrs/leva/issues/521#issuecomment-2465654716)), but it made no difference
+
+I found the source for this example is the [react-postprocessing documentation for hue/sat](https://react-postprocessing.docs.pmnd.rs/effects/hue-saturation), and the original code is in their [codesandbox example](https://codesandbox.io/p/sandbox/m9min)
+
 The ticket for this problem: [leva issue #521](https://github.com/pmndrs/leva/issues/521)
 
 ## Suspense problem
