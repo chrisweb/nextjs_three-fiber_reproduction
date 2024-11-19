@@ -11,11 +11,10 @@ Note to self: [related R3F v9 issue](https://github.com/pmndrs/react-three-fiber
 
 version of the main packages involved:
 
-@react-three/fiber: 9.0.0-rc.0
+@react-three/fiber: 9.0.0-rc.1
 @react-three/postprocessing: 2.16.3
-next: 15.0.3-canary.8
-react: 19.0.0-rc-66855b96-20241106
-react-dom: 19.0.0-rc-66855b96-20241106
+next: 15.0.4-canary.19
+react & react-dom: 19.0.0-rc-380f5d67-20241113
 
 for more check out the [package.json](./package.json)
 
@@ -65,6 +64,7 @@ which corresponds to line 139 https://github.com/pmndrs/react-postprocessing/blo
 But only react and react three fiber are the packages that got updated, postprocessing is still the stable version, so I assume the error is due to a change somewhere inside of @react-three/fiber
 
 The ticket for this problem: [react-postprocessing issue #301](https://github.com/pmndrs/react-postprocessing/issues/301)
+There is now a PR in the works: [PR #302](https://github.com/pmndrs/react-postprocessing/pull/302)
 
 ### no problem in v8
 
